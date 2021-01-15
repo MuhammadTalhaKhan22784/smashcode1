@@ -8,70 +8,48 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 
 import user from '../assets/images/user.jpg';
 
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
-// import Home from '../home/home';
-// import Fundraising from '../fundraising/fundraising';
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
 	render(){
-		
+
+		return (			
+			<header className={classes.Toolbar}>
+				<div className={classes.DrawerToggle}>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				
+				<nav className={classes.DesktopOnly}>
+					<ul>
+						<NavLink to="/" className={classes.Logo}><img src={logo} alt="logo" style={{width: '180px'}} /></NavLink>
+						<li>
+							<NavLink to="/fundraising">browse fundraising <FontAwesomeIcon icon={faChevronDown} /></NavLink>
+						</li>
+						<li>
+							<NavLink to="/auction">auction house</NavLink>
+						</li>
+						<li>
+							<NavLink to="#">tokens</NavLink>
+						</li>
 
 
-
-
-		return (
-			<Router>
-				<header className={classes.Toolbar}>
-					<div className={classes.DrawerToggle}>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-					
-					<nav className={classes.DesktopOnly}>
-						<ul>
-							<a href="/" className={classes.Logo}><img src={logo} alt="logo" style={{width: '180px'}} /></a>
-							<li>
-								<Link to="/fundraising">browse fundraising <FontAwesomeIcon icon={faChevronDown} /></Link>
-							</li>
-							<li>
-								<Link to="/auction">auction house</Link>
-							</li>
-							<li>
-								<a href="#">tokens</a>
-							</li>
-
-
-							<li>
-								<button className={classes.Button}>RAISE MONEY</button>
-							</li>
-							<li>
-								<a href="#"><i className='fa fa-home'></i></a>
-							</li>
-							<li>
-								{/*<a href="#">log in</a>*/}
-								<a href="#"><FontAwesomeIcon icon={faBell} className={classes.FaBell}/></a>
-							</li>
-							
-							<li>
-								<Link to="/userProfile"><img src={user} alt="user" className={classes.User} /></Link>
-							</li>
-						</ul>
-					</nav>
-				</header>
-
-				{/*<Switch>
-					<Route path="/" component={HomePage} >
-						<HomePage />
-					</Route>
-					<Route path="/fundraising" component={FundraisingPage} >
-						<FundraisingPage />
-					</Route>
-				</Switch>*/}
-			</Router>
-			
-			
+						<li>
+							<button className={classes.Button}>RAISE MONEY</button>
+						</li>
+						
+						<li>
+							{/*<a href="#">log in</a>*/}
+							<NavLink to="#"><FontAwesomeIcon icon={faBell} className={classes.FaBell}/></NavLink>
+						</li>
+						
+						<li>
+							<NavLink to="/userProfile"><img src={user} alt="user" className={classes.User} /></NavLink>
+						</li>
+					</ul>
+				</nav>
+			</header>
 		);
 	}
 }

@@ -27,12 +27,17 @@ import { faTwitter, faFacebook, faLinkedin, faTelegram } from '@fortawesome/free
 
 import classes from './userProfile.module.css';
 
-import {withRouter} from 'react-router-dom';
+import LineChart from '../lineChart/lineChart';
+import DonutChart from '../donutChart/donutChart';
 
 class UserProfile extends Component {
 	constructor(props) {
 		super(props);
 		this.myRef = React.createRef();
+	}
+
+	componentDidMount() {
+		// chart.render();
 	}
 
 	render(){
@@ -46,8 +51,6 @@ class UserProfile extends Component {
 					<a href="#"><FontAwesomeIcon icon={faDollarSign} /></a>
 					<a href="#"><FontAwesomeIcon icon={faComment} /></a>
 				</div>
-
-
 
 
 				<div className={"container-fluid " + classes.CardDisplay}>				
@@ -75,15 +78,12 @@ class UserProfile extends Component {
 									  <option value="3">Three</option>
 									</select>
 								</span>
-								{/*<p className={classes.CardText2 + " pt-2 pb-2"}><strong>ID</strong><br/>SUPP2455</p>
-								<p className={classes.CardText2 + " pt-2 pb-2"}><strong>Created</strong><br/>22 Dec 2013</p>
-								<p className={classes.ReadMore + " pt-3"}>Download Overall Report</p>*/}
-								{/*<canvas id="myChart" ref={this.myRef} width="400" height="200" style={{backgroundColor: '#f4f4f4', maxWidth: '80%'}}></canvas>*/}
-								{/*<div id="chartContainer" style={{height: '100%', maxWidth: '80%'}}></div>*/}
+								
 
 								<div className="row" style={{height: '100%', maxWidth: '100%'}}>
-									<div className="col-12 col-md-10" id="chartContainer">
-									</div>
+									
+									<LineChart />
+									
 									<div className="col-12 col-md-2 pl-5 pt-5">
 										<p style={{color: '#09dbc6'}}>Gross balance</p>
 										<p>Net balance</p>
@@ -122,17 +122,15 @@ class UserProfile extends Component {
 									  <option value="3">Three</option>
 									</select>
 								</span>
-								{/*<p className={classes.CardText2 + " pt-2 pb-2"}><strong>ID</strong><br/>SUPP2455</p>
-								<p className={classes.CardText2 + " pt-2 pb-2"}><strong>Created</strong><br/>22 Dec 2013</p>
-								<p className={classes.ReadMore + " pt-3"}>Download Overall Report</p>*/}
-								{/*<canvas id="myChart" ref={this.myRef} width="400" height="200" style={{backgroundColor: '#f4f4f4', maxWidth: '80%'}}></canvas>*/}
+								
 								
 								<div className="row" style={{height: '100%', maxWidth: '100%'}}>
 									<div className="col-12 col-md-5">
 										<img src={world} style={{height: '100%', width: '100%', objectFit: 'contain'}} />
 									</div>
-									<div className="col-12 col-md-5" id="chartDonut">
-									</div>
+
+									<DonutChart />
+									
 									<div className="col-12 col-md-2 pl-5 pt-5">
 										<h5 className="pb-3">Europe</h5>
 										<p><strong>Qty</strong><br/>45%</p>
@@ -154,4 +152,4 @@ class UserProfile extends Component {
 	}
 }
 
-export default withRouter(UserProfile);
+export default UserProfile;

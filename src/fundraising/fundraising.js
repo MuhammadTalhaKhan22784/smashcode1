@@ -40,7 +40,8 @@ import shirt from '../assets/images/fund/shirt.PNG';
 import shoe from '../assets/images/fund/shoe.PNG';
 import tom from '../assets/images/fund/tom.PNG';
 
-import {withRouter} from 'react-router-dom';
+import Carousel from 'react-elastic-carousel';
+import Item from "../Item";
 
 class Fundraising extends Component {
 	render(){
@@ -82,8 +83,8 @@ class Fundraising extends Component {
 	    				<div className="row justify-content-center">
 
 	    					<div className="col-3 mt-5">
-	    						<div className="row justify-content-center">
-	    							<FontAwesomeIcon icon={faChevronLeft} style={{color: '#09dbc6', fontSize: '30px', marginTop: '2rem'}} />
+	    						<div className="row">
+	    							{/*<FontAwesomeIcon icon={faChevronLeft} style={{color: '#09dbc6', fontSize: '30px', marginTop: '2rem'}} />
 	    							<div className="col-3">
 	    								<img src={prod1} className="card-img-top" alt="card1" />
 	    							</div>
@@ -93,7 +94,15 @@ class Fundraising extends Component {
 	    							<div className="col-3">
 	    								<img src={prod3} className="card-img-top" alt="card1" />
 	    							</div>
-	    							<FontAwesomeIcon icon={faChevronRight} style={{color: '#09dbc6', fontSize: '30px', marginTop: '2rem'}} />
+	    							<FontAwesomeIcon icon={faChevronRight} style={{color: '#09dbc6', fontSize: '30px', marginTop: '2rem'}} />*/}
+	    							<Carousel itemsToShow={3}>
+									  <Item><img src={prod1} className="card-img-top" alt="card1" /></Item>
+									  <Item><img src={prod2} className="card-img-top" alt="card1" /></Item>
+									  <Item><img src={prod3} className="card-img-top" alt="card1" /></Item>
+									  <Item><img src={prod1} className="card-img-top" alt="card1" /></Item>
+									  <Item><img src={prod2} className="card-img-top" alt="card1" /></Item>
+									  <Item><img src={prod3} className="card-img-top" alt="card1" /></Item>
+									</Carousel>
 	    						</div>
 			    			</div>
 
@@ -350,4 +359,4 @@ class Fundraising extends Component {
 	}
 }
 
-export default withRouter(Fundraising);
+export default Fundraising;

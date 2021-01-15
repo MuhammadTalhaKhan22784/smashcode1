@@ -24,7 +24,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebook, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
-import {withRouter} from 'react-router-dom';
 
 class Home extends Component {
 	render(){
@@ -228,4 +227,4 @@ class Home extends Component {
 	}
 }
 
-export default withRouter(Home);
+export default Home;

@@ -29,6 +29,8 @@ import { faTwitter, faFacebook, faLinkedin, faTelegram } from '@fortawesome/free
 
 import classes from './auction.module.css';
 
+
+
 import anonymous from '../assets/images/fund/anonymous.PNG';
 import boy from '../assets/images/fund/boy.PNG';
 import hannah from '../assets/images/fund/hannah.PNG';
@@ -38,7 +40,6 @@ import shirt from '../assets/images/fund/shirt.PNG';
 import shoe from '../assets/images/fund/shoe.PNG';
 import tom from '../assets/images/fund/tom.PNG';
 
-import {withRouter} from 'react-router-dom';
 
 class Auction extends Component {
 	render(){
@@ -339,4 +340,4 @@ class Auction extends Component {
 	}
 }
 
-export default withRouter(Auction);
+export default Auction;

@@ -1,0 +1,146 @@
+.CardImage {
+	width: 138px;
+	height: 138px;
+	border-radius: 8px;
+}
+
+.CardSize {
+	min-width: 17rem;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.CardSize2 {
+    max-width: 40rem;
+    margin: 0 2%;
+    height: 100%;
+}
+
+/*.CardSize3 {
+    width: 15rem;
+    height: 100%;
+    margin: 0 2%;
+}*/
+
+.CardDisplay {
+    /*display: inline-flex;*/
+    margin: 4% 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.CardBorder {
+	border-radius: 10px;
+	box-shadow: 10px 5px 15px #ccc;
+}
+
+.CardBorder2 {
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px #ccc;
+    height: 100%;
+    padding: 10px 100px 10px 20px;
+    min-width: 270px;
+}
+
+.CardTitle {
+	color: #09dbc6;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.CardTitle2 {
+    /*color: #09dbc6;*/
+    font-size: 1rem;
+    font-weight: 600;
+    /*padding: 20px 0;*/
+    margin-bottom: 0;
+}
+
+.CardText {
+	padding: 30px 0;
+}
+
+.CardText2 {
+    /*padding: 30px 0;*/
+    margin-bottom: 0;
+}
+
+.ReadMore {
+    color: #09dbc6;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.ParaFontSize {
+    font-size: 15px;
+}
+
+
+
+/* logo slider */
+.LogoImage {
+	height: 2.5rem;
+}
+/* logo slider */
+
+
+.SliderHeading {
+	color: #fff;
+    top: 8rem;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 15%;
+    margin-right: auto;
+    width: max-content;
+}
+
+.SliderImage {
+	height: 35rem;
+    object-fit: cover;
+}
+
+.Button {
+	background-color: #09dbc6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.FaCommentAlt, .FaHeart {
+    color: #09dbc6;
+}
+
+
+.BlackCardBorder {
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px #ccc;
+    height: 100%;
+    padding: 20px 30px;
+    /*min-width: 270px;*/
+    background-color: #474747;
+}
+
+.Linear {
+    background: linear-gradient(to right, #09dbc6, #09dbc6 1%, #d4ffef 50%, #d4ffef, white);
+}
+
+.CardBorder3 {
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px #ccc;
+    /*height: 100%;*/
+    padding: 20px 30px 0 30px;
+    text-align: center;
+}

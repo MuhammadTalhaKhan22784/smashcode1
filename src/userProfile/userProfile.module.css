@@ -1,0 +1,187 @@
+.SideBar {
+  height: 150%;
+  width: 80px;
+  position: absolute;
+  /*z-index: 0;*/
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 150px;
+  text-align: center;
+}
+
+
+.SideBar a {
+  /*padding: 6px 8px 6px 16px;*/
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  display: block;
+  margin: 40% 0;
+}
+
+.SideBarActive {
+    border-right: solid #09dbc6;
+    border-width: 2px;
+}
+
+
+
+
+
+
+
+
+.CardImage {
+	width: 138px;
+	height: 138px;
+	border-radius: 8px;
+}
+
+.CardSize {
+	max-width: 17rem;
+    margin: 0 2%;
+    height: 100%;
+}
+
+.CardSize2 {
+    max-width: 40rem;
+    margin: 0 2%;
+    height: 100%;
+}
+
+/*.CardSize3 {
+    width: 15rem;
+    height: 100%;
+    margin: 0 2%;
+}*/
+
+.CardDisplay {
+    /*display: inline-flex;*/
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    justify-content: center;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.CardBorder {
+	border-radius: 10px;
+	box-shadow: 10px 5px 15px #ccc;
+}
+
+.CardBorder2 {
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px #ccc;
+    height: 100%;
+    padding: 15px;
+    /*padding: 10px 100px 10px 20px;*/
+    /*min-width: 250px;*/
+}
+
+.CardTitle {
+	color: #09dbc6;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.CardTitle2 {
+    /*color: #09dbc6;*/
+    font-size: 1.5rem;
+    font-weight: 600;
+    /*padding: 20px 0;*/
+    margin-bottom: 0;
+}
+
+.CardText {
+	padding: 30px 0;
+}
+
+.CardText2 {
+    /*padding: 30px 0;*/
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.ReadMore {
+    color: #09dbc6;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.ParaFontSize {
+    font-size: 15px;
+}
+
+
+
+/* logo slider */
+.LogoImage {
+	height: 2.5rem;
+}
+/* logo slider */
+
+
+.SliderHeading {
+	color: #fff;
+    top: 8rem;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 15%;
+    margin-right: auto;
+    width: max-content;
+}
+
+.SliderImage {
+	height: 35rem;
+    object-fit: cover;
+}
+
+/*.Button {
+	background-color: #09dbc6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+
+.FaHome {
+    color: #09dbc6;
+}
+
+
+.CardTitleSpan {
+    right: 0;
+    position: absolute;
+    padding-right: 1rem;
+}
+
+.Select {
+    width: 150px;
+}
+
+
+.Button {
+    background-color: #09dbc6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 22px;
+    font-size: 15px;
+    font-weight: 600;
+}

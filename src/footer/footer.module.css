@@ -1,0 +1,172 @@
+body {
+	/*min-height: 100vh;*/
+	font-family: sans-serif;
+}
+.Footer {
+	/*position: fixed; */
+    height: 300px;
+    width: 100%;
+    background-color: #474747;
+    color: white;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 2% 12%;
+    box-sizing: border-box;
+    /* z-index: 100; */
+    /* align-items: center; */
+	/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+	position: relative;
+}
+
+.Footer nav {
+	width: 100%;
+	/*height: 100%;*/
+	margin: 50px 1%;
+}
+
+
+@media (max-width: 499px) {
+	/*.DesktopOnly {
+		display: none;
+	}
+
+	.DrawerToggle {
+	    width: 40px;
+	    height: 100%;
+	    display: flex;
+	    flex-flow: column;
+	    justify-content: space-around;
+	    align-items: center;
+	    padding: 10px 0;
+	    box-sizing: border-box;
+	    cursor: pointer;
+	}
+
+	.DrawerToggle div {
+	    width: 90%;
+	    height: 3px;
+	    background-color: #000;
+	}*/
+}
+
+
+
+
+
+/*nav items*/
+
+.Footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* display: flex; */
+    /* flex-flow: column; */
+    /* align-items: center; */
+    /* height: 100%; */
+    /* justify-content: center; */
+}
+
+@media (min-width: 500px) {
+	.Footer ul {
+		/*flex-flow: row;*/
+	}
+}
+
+
+
+
+
+
+
+/* nav item */
+.Footer li {
+	/*margin: 10px 0;*/
+	box-sizing: border-box;
+	display: block;
+	/*width: 100%;*/
+}
+
+.Footer li a {
+	color: #8F5C2C;
+	text-decoration: none;
+	/*width: 100%;*/
+	box-sizing: border-box;
+	display: block;
+}
+
+.Footer li a:hover,
+.Footer li a:active,
+.Footer li a.active {
+	color: #40A4C8;
+}
+
+@media (min-width: 500px) {
+	.Footer li {
+		margin: 0;
+		display: flex;
+		/*align-items: center;
+		height: 100%;
+		width: auto;*/
+	}
+
+	.Footer li a {
+		color: #e8e8e8;
+		font-size: 15px;
+		margin: 5px 0;
+	    /* height: 100%; */
+	    /* padding: 16px 10px; */
+	    /* border-bottom: 4px solid transparent; */
+	    /* line-height: 3;
+	}
+
+	.Footer li a:hover,
+	.Footer li a:active,
+	.Footer li a.active {
+		/*background-color: #ccc;*/
+		/*border-bottom: 4px solid #40A4C8;*/
+		/*color: white;*/
+	}
+}
+
+.Button {
+	background-color: #09dbc6;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 18px 22px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.Heading3 {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.Li_a {
+	color: #09dbc6 !important;
+}
+
+
+.Footer input, button {
+	padding-left: 5%;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    height: 3rem;
+    line-height: 0;
+}
+
+.Footer button {
+	background-color: #09dbc6;
+    color: #fff;
+    padding: 15px 30px;
+    margin-left: 0.4rem;
+}
+
+.FaTwitter, .FaFacebook, .FaLinkedin, .FaTelegram {
+	font-size: 2rem;
+    margin-right: 1rem;
+}

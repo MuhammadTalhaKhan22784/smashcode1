@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- logo slider -->
+    <style type="text/css">
+      h2{
+  /*text-align:center;
+  padding: 20px;*/
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+    </style>
+    <!-- logo slider -->
+
+
+
+
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <!-- logo slider -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- chart -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- chart -->
+
+
+    <!-- worldmap -->
+    <!-- worldmap -->
+
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.customer-logos').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover: false,
+              responsive: [{
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 4
+                  }
+              }, {
+                  breakpoint: 520,
+                  settings: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+      });
+    </script>
+    <!-- logo slider -->
+
+
+    <!-- chart -->
+    
+    <script>
+      window.onload = function () {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        animationEnabled: true,
+        title:{
+          // text: "Share Value - 2016"   
+        },
+        axisX: {
+          interval: 1,
+          intervalType: "month",
+          valueFormatString: "MMM"
+        },
+        axisY:{
+          // title: "Price (in USD)",
+          includeZero: true,
+          valueFormatString: "$#0"
+        },
+        data: [{        
+          type: "line",
+          markerSize: 12,
+          xValueFormatString: "MMM, YYYY",
+          yValueFormatString: "$###.#",
+          dataPoints: [        
+            { x: new Date(2020, 00, 1), y: 61 },
+            { x: new Date(2020, 01, 1), y: 71 },
+            { x: new Date(2020, 02, 1) , y: 55 },
+            { x: new Date(2020, 03, 1) , y: 50 },
+            { x: new Date(2020, 04, 1) , y: 65 },
+            { x: new Date(2020, 05, 1) , y: 85 },
+            { x: new Date(2020, 06, 1) , y: 68 },
+            { x: new Date(2020, 07, 1) , y: 28 },
+            { x: new Date(2020, 08, 1) , y: 34 },
+            { x: new Date(2020, 09, 1) , y: 24 },
+            { x: new Date(2020, 10, 1) , y: 44 },
+            { x: new Date(2020, 11, 1) , y: 34 }
+          ]
+        },
+        {        
+          type: "line",
+          markerSize: 12,
+          xValueFormatString: "MMM, YYYY",
+          yValueFormatString: "$###.#",
+          dataPoints: [        
+            { x: new Date(2020, 00, 1), y: 12 },
+            { x: new Date(2020, 01, 1), y: 51 },
+            { x: new Date(2020, 02, 1) , y: 15 },
+            { x: new Date(2020, 03, 1) , y: 20 },
+            { x: new Date(2020, 04, 1) , y: 35 },
+            { x: new Date(2020, 05, 1) , y: 95 },
+            { x: new Date(2020, 06, 1) , y: 18 },
+            { x: new Date(2020, 07, 1) , y: 8 },
+            { x: new Date(2020, 08, 1) , y: 4 },
+            { x: new Date(2020, 09, 1) , y: 84 },
+            { x: new Date(2020, 10, 1) , y: 94 },
+            { x: new Date(2020, 11, 1) , y: 22 }
+          ]
+        }
+        ]
+      });
+      chart.render();
+
+
+
+
+
+      // donut chart
+      var chart2 = new CanvasJS.Chart("chartDonut", {
+        animationEnabled: true,
+        title:{
+          // text: "Email Categories",
+          // horizontalAlign: "left"
+        },
+        data: [{
+          type: "doughnut",
+          startAngle: 60,
+          //innerRadius: 60,
+          indexLabelFontSize: 12,
+          indexLabel: "{label} - #percent%",
+          toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+          dataPoints: [
+            { y: 45, label: "Europe" },
+            { y: 22, label: "North America" },
+            { y: 18, label: "South America" },
+            { y: 15, label: "Asia"}
+          ]
+        }]
+      });
+      chart2.render();
+
+
+
+      }
+    </script>
+    <!-- chart -->
+
+
+
+
+    <!-- worldmap -->
+    
+    <!-- worldmap -->
+
+  </body>
+</html>
